@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Register Hatanami</title>
+</head>
+<style>
+    fieldset{
+        width:auto ;
+        height:auto;
+        border:1px solid #ADC4CE;
+        background-color: #F1F0E8;
+        box-shadow: 3px 3px 5px #333;
+    }
+    fieldset legend{
+        background-color: #96B6C5;
+        font-family: arial;
+        padding: 8px;px;
+        border:1px solid #ADC4CE;
+        font-weight: bold;
+        box-shadow:none;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        border-radius: 10px;
+        border-color: #ADC4CE;
+        box-shadow:none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px!important;
+    }
+    button[type="reset"]{
+        border-radius: 10px;
+        border-color: #ADC4CE;
+        box-shadow:none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px!important;
+    }
+    input[type="checkbox"]{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    input[type="text"]{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <form action="register.php" method="post">
+        <fieldset>
+            <legend>User Login</legend>
+        <!--Username-->
+        <p><label for="Nama_Pengguna">Name :</label></p>
+        <p><input type="text" name="Nama_Pengguna" placeholder="Enter Your Name" required=""></p>
+        <!--Email-->
+        <p><label for="Email_Pengguna">Email :</label><br></p>
+        <input type="email" name="Email_Pengguna" placeholder="Enter Your Email" required=""></p>
+        <!--Password-->
+        <p><label for="Password_Pengguna">Password :</label><br></p>
+        <p></p><input type="password" name="Password_Pengguna" id="sandi" placeholder="Enter Your Password" required=""></p>
+        <!--Confirm Password-->
+        <p><label for="Confirm_Password">Confirm Password :</label><Br></p>
+        <p><input type="password" name="Confirm_Password" id="consandi" placeholder="Re-enter your password" required=""><br></p>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <legend>Personal Information</legend><br>
+        <p><label for="Country">Country</label>
+        <select name="Country" id="Country">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Australia">Australia</option>
+            <option value="Jepang">Jepang</option>
+            <option value="Amerika">Amerika</option>
+            <option value="Cina">Cina</option>
+            <option value="Taiwan">Taiwan</option>
+        </select></p>
+
+        <label for="Tempat">Place,</label>
+        <label for="Tanggal">Date of Birth:</label>
+        <input type="text" name="tempat" id="tempat">
+        <input type="date" name="tl" id="Tanggal">
+        <p>Address :</p>
+        <p><textarea name="alamat" id="alamat" cols="100" rows="7"></textarea></p>
+        <p>Gender :<br>
+        <input type="radio" name="Gender" id="lk" value="Pria"><label id="lk">Laki-Laki</label>
+        <input type="radio" name="Gender" id="pr" value="Wanita"><label id="lk">Perempuan</label></p>
+        Hobby :<br>
+        <input type="checkbox" name="Hobby1">Archery<br>
+        <input type="checkbox" name="Hobby1">Boxing<br>
+        <input type="checkbox" name="Hobby1">Classical<br>
+        <input type="checkbox" name="Hobby1">Singing<br>
+        <input type="checkbox" name="Hobby1">Cooking<br>
+        <input type="checkbox" name="Hobby1">Reading<br></p>
+        
+        <label for="programstudi">Select Your Program Study:</label>
+        <select name="Programstudi" id="Programstudi">
+        <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
+        <option value="S1 Ilmu Budaya"> S1 Ilmu Budaya</option>
+        <option value="S1 Hukum">S1 Hukum</option>
+        <option value="S1 Kedokteran">S1 Kedokteran</option>
+        <option value="S1 Ilmu Komputer">S1 Ilmu Komputer</option>
+        <option value="S2 Teknik Informatika">S2 Teknik Informatika</option>
+        <option value="S2 Kedokteran>">S2 Kedokteran</option>"
+        <option value="S2 Hukum">S2 Hukum</option>
+        <option value="S2 Ilmu Budaya">S2 Ilmu Budaya</option>
+        <option value="S2 Teknik">S2 Teknik</option>
+        <option value="S2 DSAI">S2 Sains Data dan Kecerdasan Buatan</option>
+        <option value="S3 Ilmu Komputer">S3 Ilmu Komputer</option>
+        </select>
+        <p></p>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <center><input type="submit" value="Sing up">
+            <button type="reset">Reset</button></center>
+        </fieldset>
+    </form>
+</body>
+</html>
