@@ -5,8 +5,28 @@
     <title>Aritmatika Tugas</title>
     <link rel="stylesheet" href="./Aritmatika.css">
 </head>
+<style>
+    fieldset{
+        width:400px ;
+        height:100%;
+        border:1px solid #ADC4CE;
+        background-color: #F1F0E8;
+        box-shadow: 3px 3px 5px #333;
+    }
+    button[type="button"]{
+        width: 50px;
+        border-radius: 10px;
+        border-color: #ADC4CE;
+        box-shadow:none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px!important;
+    }
+</style>
 <body>
-    <div class="container">
+    <center>
+        <fieldset>
+            <h1>Aritmatika</h1>
+            <div class="container">
             <form name="aritmatika" id="aritmatika">
             <label for="number_1">Bilangan Pertama</label> <Br>
             <input type="number" id="number_1" name="number_1"  placeholder="Masukkan Bilangan Angka"><p></p>
@@ -22,6 +42,7 @@
             <button type="button" onclick="operation('/')">÷</button>
         </div>
     </div>
+</fieldset></center>
     <script>
         function operation(hitung){
             var a = parseFloat(document.getElementById('number_1').value)
