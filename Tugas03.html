@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Aritmatika Tugas</title>
+    <link rel="stylesheet" href="./Aritmatika.css">
+</head>
+<body>
+    <div class="container">
+            <form name="aritmatika" id="aritmatika">
+            <label for="number_1">Bilangan Pertama</label> <Br>
+            <input type="number" id="number_1" name="number_1"  placeholder="Masukkan Bilangan Angka"><p></p>
+            <label for="number_2">Bilangan Kedua</label> <Br>
+            <input type="number" id="number_2" name="number_2"  placeholder="Masukkan Bilangan Angka"><p></p>
+        </form>
+    </div>
+    <div class="perhitungan">
+        <div class="button">
+            <button type="button" onclick="operation('+')">+</button>
+            <button type="button" onclick="operation('-')">-</button>
+            <button type="button" onclick="operation('*')">x</button>
+            <button type="button" onclick="operation('/')">÷</button>
+        </div>
+    </div>
+    <script>
+        function operation(hitung){
+            var a = parseFloat(document.getElementById('number_1').value)
+            var b = parseFloat(document.getElementById('number_2').value)
+            var c
+
+            switch (hitung) {
+                case '+':
+                    c = a + b
+                    alert(a + "+" + b + " = " + c);
+                    break;
+                case '-':
+                    c = a - b
+                    alert(a + "-" + b + " = " + c);
+                    break;
+                case '*':
+                    c = a * b
+                    alert(a + "x" + b + " = " + c);
+                    break;
+                case '/':
+                    if (b === 0) {
+                        alert("Pembagian nol tidak diizinkan");
+                    } else {
+                        hasil = a / b;
+                        alert(a + " ÷ " + b + " = " + hasil);
+                    }
+                    break;
+                default:
+                    alert("Operator tidak valid");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0;
+}
+.perhitungan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center ;
+}
