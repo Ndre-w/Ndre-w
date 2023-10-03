@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Bootstrap</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylebs.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,500&display=swap'); </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/ndr.eeww/" target="_blank">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- isi -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="col align-self-center d-sm-none d-md-block d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none mt-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQPX95vdsQ-ldNEWXiUa08L4ntkeREdvtW3w&usqp=CAU/" class="img-fluid" alt="Logo" width="700" style="border-radius: 6px;">
+                        </div>
+                        <h2 class="mt-4">Nonton Anime di Kasanime </h2>
+                        <p class="mt-3 mb-3">Selamat datang di Kasanime, platform streaming anime terbaik untuk para pecinta anime di seluruh dunia! Di sini, Anda akan menemukan ribuan episode anime dari berbagai genre dan tahun rilis. Kami menyediakan pengalaman menonton anime yang nyaman dan berkualitas tinggi. </p>
+                    </div>
+                    <div class="col align-self-center d-none d-sm-block mt-3">
+                        <img src="image/conscious-design-3D43SBDDkAc-unsplash.jpg" class="img-fluid" alt="Cook" width="700" style="border-radius: 6px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container py-3">
+            <!-- Card -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-1">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7VhkUQHae72fPlUGf1cdOxklSLrGIIVF4SA&usqp=CAU/" class="card-img-top" alt="naruto">
+                        <div class="card-body">
+                            <h5 class="card-title">Naruto Shippuden</h5>
+                            <p class="card-text">Naruto Uzumaki, seorang ninja yang hiperaktif, periang, dan ambisius yang ingin mewujudkan keinginannya untuk mendapatkan gelar Hokage, pemimpin dan ninja terkuat di desanya.</p>
+                        </div>
+                        <div class="d-flex justify-content mb-3 ps-3">
+                            <button class="btn btn-outline-primary">Klik Nonton</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIkPruLjFnMq58-1tW5Be8g1H-Xfvwbw6XwA&usqp=CAU/" class="card-img-top" alt="onepiece">
+                        <div class="card-body">
+                            <h5 class="card-title">One Piece</h5>
+                            <p class="card-text">Perjuangan Luffy yang saat masih kecil sudah bercita-cita menjadi bajak laut. Saat dewasa, ia mulai membentuk tim yang bernama Bajak Laut Topi Jerami. Dalam mencapai cita-cita Luffy sebagai bajak laut, ia dibantu oleh rekan-rekannya</p>
+                        </div>
+                        <div class="d-flex justify-content mb-3 ps-3">
+                            <button class="btn btn-outline-primary">Klik Nonton</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://asset.kompas.com/crops/MUbtBH273dQNeVlBgCazZ0C72mA=/159x11:1151x672/750x500/data/photo/2021/05/04/60910f004a62b.jpg" class="card-img-top" alt="rezero">
+                        <div class="card-body">
+                            <h5 class="card-title">Re: Zero</h5>
+                            <p class="card-text">Kisah bermula dari Subaru Natsuki (diisi suara oleh Yuusuke Kobayashi) yang tiba-tiba terlempar ke dunia fantasi saat dirinya ingin kembali ke rumah setelah berbelanja.</p>
+                        </div>
+                        <div class="d-flex justify-content mb-3 ps-3">
+                            <button class="btn btn-outline-primary">Klik Nonton</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
